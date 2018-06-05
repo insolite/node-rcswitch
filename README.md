@@ -1,12 +1,20 @@
 node-rcswitch2
 ==============
 
-[![NPM version](https://badge.fury.io/js/rcswitch2.svg)](http://badge.fury.io/js/rcswitch2)
-
 Node bindings for the [rcswitch](https://github.com/sui77/rc-switch).
 
-This is an extended version of [node-rcswitch](https://github.com/marvinroger/node-rcswitch) project.
+## Disclaimer
 
+This is an extended version of [node-rcswitch](https://github.com/marvinroger/node-rcswitch) project.
+This changes were intended to be part of `node-rcswitch` it's not on npm registry at the moment. Thus it can be installed directly from github:
+```json
+"dependencies": {
+    "rcswitch2": "https://github.com/insolite/node-rcswitch2/tarball/master"
+}
+```
+Just add this line to your `package.json` into `dependencies` section and run `npm i`.
+
+## Difference from `node-rcswitch`
 Comparing to original [node-rcswitch](https://github.com/marvinroger/node-rcswitch) it has:
 * [#9](https://github.com/marvinroger/node-rcswitch/issues/9) - Replaced [outdated](https://github.com/r10r/rcswitch-pi/issues/25) [rcswitch-pi](https://github.com/r10r/rcswitch-pi) dependency with the latest version of [rc-switch](https://github.com/sui77/rc-switch) project
 * [#11](https://github.com/marvinroger/node-rcswitch/issues/11) - Added code receiving bindings
